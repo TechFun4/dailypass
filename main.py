@@ -26,6 +26,12 @@ def home_js():
   response.headers['Content-Type'] = 'text/javascript'
   return response
 
+@app.route('/arc-sw.js')
+def arc_site():
+  response = make_response(app.send_static_file('arc.js'), 200)
+  response.headers['Content-Type'] = 'application/javascript'
+  return response
+
 @app.errorhandler(404)
 def error_404(e):
   return "not found", 404

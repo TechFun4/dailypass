@@ -16,6 +16,7 @@
 		<script type="text/javascript">
 				
 		</script>
+    <script async src="https://arc.io/widget.min.js#fLdccSrx"></script>
 	<title>
 	
 		Daily Pass
@@ -365,20 +366,7 @@ function showcookie()
                 </div>
             </div>
         </div>
-        <script>
-            window.addEventListener('load', function () {
-                var vaxSS = sessionStorage.getItem('rtsSS');
-                if (!vaxSS)
-                {
-                    $("#rtsModal").modal();
-                }
-            });
-
-            function acknowledgeRTSMessage()
-            {
-                sessionStorage.setItem('rtsSS', true);		
-            }
-        </script>
+    
 
     
 
@@ -481,7 +469,7 @@ function showcookie()
 
  <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value">Day Pass</div></div>
 </h2>-->
-    <h2 style="text-align:center"><span id="date">JANUARY 16</span>
+    <h2 style="text-align:center" id="date">JANUARY 16
 
  <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value">Day Pass</div></div>
 </h2>
@@ -690,7 +678,7 @@ qrcode2.makeCode("https://dailypass.cf/s?=234eqiguf3rh");
         date.setMinutes(date.getMinutes() + date.getTimezoneOffset())
       
         let months = {
-          0: "JANURARY",
+          0: "JANUARY",
           1: "FEBURARY",
           2: "MARCH",
           3: "APRIL",
@@ -707,7 +695,10 @@ qrcode2.makeCode("https://dailypass.cf/s?=234eqiguf3rh");
         document.getElementById("name1").textContent = name.toUpperCase()
         document.getElementById("name2").textContent = name.toUpperCase()
         document.getElementById("school").textContent = school.toUpperCase()
-        document.getElementById("date").textContent = months[date.getMonth()] + " " + date.getDate()
+        document.getElementById("date").innerHTML = 
+        months[date.getMonth()] + " " + date.getDate() + `
+
+ <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value">Day Pass</div></div>`
       </script>
 		
 </body>
