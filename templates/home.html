@@ -45,7 +45,10 @@
       <form>
         <h2 class="text-center">Dailypass Generator</h2>
         <div class="mb-3"><input class="form-control" type="text" name="name" id="name" placeholder="Name"></div>
-        <div class="mb-3"><input class="form-control" type="text" name="school" id="school" placeholder="School"></div>
+        <div class="mb-3"><input class="form-control" type="text" name="school" id="school" placeholder="School" list="schoolData"></div>
+        <datalist id="schoolData">
+          <option value="Start typing your school name for a list...">
+        </datalist>
         <div class="mb-3"><input class="form-control" type="date" name="date" id="date"></div>
         <div class="form-check"><input class="form-check-input" type="checkbox" name="remember" id="remember" onchange="rememberChange();"><label class="form-check-label" for="remember">Remember my Name and School</label></div>
         <div class="form-check"><input class="form-check-input" type="checkbox" name="covid" id="covid"><label class="form-check-label" for="covid">Do you have any COVID-19 Symptoms?</label></div>
