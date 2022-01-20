@@ -1,10 +1,15 @@
-from flask import Flask, render_template, make_response
+from flask import Flask, render_template, make_response, request
 import os
 import asyncio
 import random
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ["secret"]
+
+@app.before_request
+def before_request_site():
+  if request.host not in ['dailypass.techfun.live']:
+    return 'forbidden', 403
 
 @app.route("/")
 def home():

@@ -8,7 +8,7 @@ Occasionally, the official LAUSD dailypass generator <a href="https://dailypass.
 
 ## Disclaimer
 
-We do not own the actual design of the dailypass (the dailypass belongs to its respective owner, LAUSD). Our sole goal is to minimize the impact of COVID-19 on the learening experience of LAUSD students and to support charity foundations.
+We do not own the actual design of the dailypass (the dailypass belongs to its respective owner, LAUSD). Our sole goal is to minimize the impact of COVID-19 on the learning experience of LAUSD students and to support charity foundations.
 
 ## Profits?
 
