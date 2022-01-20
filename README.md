@@ -1,5 +1,7 @@
 # Dailypass Generator
 
+Hosted at <a href="https://dailypass.cf" title="Dailypass Generator Website" target="_blank">dailypass.cf</a>
+
 ## Our Goal
 
 Occasionally, the official LAUSD dailypass generator <a href="https://dailypass.lausd.net" title="Official Dailypass Generator" target="_blank">here</a> fails to work. We aim to help students avoid losing precious learning time due to the long entrance lines caused by LAUSD's failure to maintain their website.
