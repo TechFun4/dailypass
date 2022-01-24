@@ -8,7 +8,7 @@ app.config["SECRET_KEY"] = os.environ["secret"]
 
 @app.before_request
 def before_request_site():
-  if request.host not in ['dailypass.techfun.live']:
+  if request.host not in ['dailypass.techfun.me']:
     return 'forbidden', 403
 
 @app.route("/")
