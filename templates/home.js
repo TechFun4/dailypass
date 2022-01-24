@@ -17,7 +17,7 @@ if (localStorage.school) {
   document.getElementById("remember").checked = true;
 }
 
-let posting = $.ajax({url: "https://techfun.live/api/v1/articles/views", type: 'POST', data: JSON.stringify({id: "daily-pass-count"}), contentType: "application/json", async: false})
+let posting = $.ajax({url: "https://techfun.me/api/v1/articles/views", type: 'POST', data: JSON.stringify({id: "daily-pass-count"}), contentType: "application/json", async: false})
 
 posting.always(function(data){
   document.getElementById("userCount").textContent = data.views + " Unique Users"
