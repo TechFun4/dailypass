@@ -659,13 +659,13 @@ qrcode2.makeCode("https://dailypass.cf/?utm_source=qrc");
         let name = params.get('name')
         let school = params.get('school')
         let date = params.get('date')
-        date = new Date(date)
+        newDate = new Date(date)
 
-        if (!(name && school && date) || date == "Invalid Date") {
+        if (!(name && school && date) || newDate == "Invalid Date") {
           window.location.href = '/'
         }
 
-        date.setMinutes(date.getMinutes() + date.getTimezoneOffset())
+        newDate.setMinutes(newDate.getMinutes() + newDate.getTimezoneOffset())
       
         let months = {
           0: "JANUARY",
@@ -686,7 +686,7 @@ qrcode2.makeCode("https://dailypass.cf/?utm_source=qrc");
         document.getElementById("name2").textContent = name.toUpperCase()
         document.getElementById("school").textContent = school.toUpperCase()
         document.getElementById("date").innerHTML = 
-        months[date.getMonth()] + " " + date.getDate() + `
+        months[newDate.getMonth()] + " " + newDate.getDate() + `
 
  <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value">Day Pass</div></div>`
       </script>
