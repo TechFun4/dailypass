@@ -686,7 +686,7 @@ qrcode2.makeCode("https://dailypass.cf/?utm_source=qrc");
         document.getElementById("name2").textContent = name.toUpperCase()
         document.getElementById("school").textContent = school.toUpperCase()
         document.getElementById("date").innerHTML = 
-        months[newDate.getMonth()] + " " + newDate.getDate().padStart(2, '0') + `
+        months[newDate.getMonth()] + " " + String(newDate.getDate()).padStart(2, '0') + `
 
  <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value">Day Pass</div></div>`
       </script>
